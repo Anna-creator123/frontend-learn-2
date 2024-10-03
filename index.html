@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metanit.com</title>
+</head>
+<body></body>
+    <div class="container">
+        <h1>Финансовый трекер</h1>
+        <div class="transaction-form">
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="type">
+                <option value="Income">Приход</option>
+                <option value="Expense">Расход</option>
+            </select>
+            <button onclick="addTransactionButton()">Add Transaction</button>
+        </div>
+        <div class="balance">
+            Balance: <span id="balance">$0.00</span>
+        </div>
+        <ul id="transactions" class="transaction-list"></ul>
+    </div>
+   <script src="app.js"></script>
+ </body>
+</html>
